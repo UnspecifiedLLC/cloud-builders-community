@@ -1,4 +1,7 @@
 steps:
+- name: 'gcr.io/unregistry-19e217e875c5/slackbot'
+  args: ['--build', '$BUILD_ID',
+         '--webhook', 'https://hooks.slack.com/services/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']
 - name: 'gcr.io/cloud-builders/git'
   entrypoint: 'bash'
   args:
